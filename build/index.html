@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Nunshee: Prueba</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/build/css/index.css" />
+</head>
+<body>
+  <div id="render-section"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script src="/build/app.js"></script>
+  <script>
+    const fondo = document.getElementById('seccion-parallax');
+    window.addEventListener('scroll', function(e){
+      console.log(window.scrollY);
+      var position = window.scrollY/4 - 50;
+      fondo.style.backgroundPosition = '0 -'+ position + 'px';
+    });
+  </script>
+</body>
+</html>
