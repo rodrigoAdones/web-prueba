@@ -10,12 +10,10 @@
 </head>
 <body>
   <div id="render-section"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <script src="/build/app.js"></script>
   <script>
     const fondo = document.getElementById('seccion-parallax');
     window.addEventListener('scroll', function(e){
-      console.log(window.scrollY);
       var position = window.scrollY/4 - 50;
       fondo.style.backgroundPosition = '0 -'+ position + 'px';
     });
