@@ -8,6 +8,8 @@ export default class Apps extends React.Component {
   }
   render () {
     const items = this.props.listOfServices
+    /* Se recorre el arreglo de objetos que contiene los datos de cada app */
+    /* Por cada app se crea un nuevo componente */
     const listItems = items.map((item) =>
       <AboutApp key={item.id} {...item} />
     )

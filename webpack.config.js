@@ -1,5 +1,6 @@
 var path = require('path')
-
+// Este es el archivo de configuracion de Webpack
+// Para ejecutar el proyecto, use webpack-dev-server
 module.exports = {
   entry: {
     app: ['babel-polyfill', './src/index.jsx']

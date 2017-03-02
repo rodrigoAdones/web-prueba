@@ -1,7 +1,7 @@
 {
   "name": "smartbox",
   "version": "1.0.0",
-  "description": "prueba para puesto frontend",
+  "description": "Desafio frontend SmartboxTV",
   "main": "index.js",
   "scripts": {
     "build": "webpack --watch --colors",
@@ -24,7 +24,6 @@
     "babel-preset-react": "^6.23.0",
     "gulp": "^3.9.1",
     "gulp-stylus": "^2.6.0",
-    "json-loader": "^0.5.4",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
   }

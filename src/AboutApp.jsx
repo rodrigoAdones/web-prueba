@@ -30,12 +30,14 @@ export default class AboutApp extends React.Component {
             <p className='texto'>{this.props.texto}</p>
           )}
         </a>
+        {/* Usando react-modal se define las ventanas modales que usaran cada uno de los servicios */}
         <ReactModal
           isOpen={this.state.showModal}
           contentLabel='Modal Login'
           className='Modal'
         >
           <img src={this.props.imageUrl} className={this.props.classImage} />
+          {/* Cada modal tendra su componente de login, que conectara a un servicio de validacion */}
           <Login closeModal={this.handleCloseModal} urlRequest={this.props.serviceUrl} />
         </ReactModal>
       </div>

@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>Nunshee: Prueba</title>
+  <title>Nunshee: Prueba Frontend</title>
+  <!-- Carga de la fuente Roboto -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Usando materialize, trabaje el sistema de grilla -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <!-- hoja de estilo definida -->
   <link rel="stylesheet" href="/build/css/index.css" />
 </head>
 <body>
+  <!-- Aqui se renderizara el contenido de la pagina -->
   <div id="render-section"></div>
+  <!-- Archivo del proyecto -->
   <script src="/build/app.js"></script>
   <script>
-    const fondo = document.getElementById('seccion-parallax');
+    // con este pequeño script se logra el efecto parallax
+    const fondoParallax = document.getElementById('seccion-parallax');
     window.addEventListener('scroll', function(e){
       var position = window.scrollY/4 - 50;
-      fondo.style.backgroundPosition = '0 -'+ position + 'px';
+      fondoParallax.style.backgroundPosition = '0 -'+ position + 'px';
     });
   </script>
 </body>

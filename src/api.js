@@ -2,6 +2,8 @@ import fetch from 'isomorphic-fetch'
 
 const baseUrl = 'http://test-web.nunchee.com/nunchee/api/1.0/users/login_frontend'
 
+// Usando funciones asincronas y promesas, se hara la peticion al servicio para que valida al usuario
+
 const api = {
   users: {
     async postLogin (username = 'fake', password = 'nuncaseralapass', url = baseUrl) {

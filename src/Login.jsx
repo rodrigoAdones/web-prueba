@@ -12,6 +12,7 @@ export default class Login extends React.Component {
     }
     this.handleConect = this.handleConect.bind(this)
   }
+  // Funcion asincrona que llamara a la api de validacion
   async handleConect (event) {
     event.preventDefault()
 
@@ -76,6 +77,7 @@ export default class Login extends React.Component {
   render () {
     return (
       <div className='box-login'>
+        <h3>Login</h3>
         {this.state.error && (
           <p className='error'>{this.state.errorMessage}</p>
         )}
